@@ -45,11 +45,12 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 //mainAxisAlignment: MainAxisAlignment.start,
                 children: [
+
                   Text(" Smart \n Insurance \n here!",
                       style: Theme.of(context).textTheme.headline2,
-
-
                   ),
+
+                  Padding(padding: EdgeInsets.fromLTRB(20, 0,30, 30)),
 
                   Text("\n Find all your needs faster \nthan ever",
                     style: TextStyle(
@@ -68,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                       child: Text("New Account"),
                       onPressed: () {},
                   ),
-
+                  Padding(padding: EdgeInsets.fromLTRB(20, 0, 20, 30)),
 
                   OutlinedButton(
                       style: OutlinedButton.styleFrom(
