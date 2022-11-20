@@ -46,7 +46,8 @@ class _HomePageState extends State<HomePage> {
                 //mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(" Smart \n Insurance \n here!",
-                      style: Theme.of(context).textTheme.headline2
+                      style: Theme.of(context).textTheme.headline2,
+
 
                   ),
 
@@ -56,9 +57,28 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
 
-                  Text("\n\n\n\nNew Account"),
 
-                  Text("\n\n\nSign In"),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: Size(150, 50),
+                      textStyle: TextStyle(fontSize: 20),
+                      primary: Colors.purpleAccent,
+                      onPrimary: Colors.blue,
+                    ),
+                      child: Text("New Account"),
+                      onPressed: () {},
+                  ),
+
+
+                  OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                        minimumSize: Size(160, 50),
+                        textStyle: TextStyle(fontSize: 20),
+                        primary: Colors.white,
+                        side: BorderSide(width: 3, color: Colors.white)
+                      ),
+                      onPressed: (){}, child: Text("Sign In"),)
+
 
                 ],
               )
